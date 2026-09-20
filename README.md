@@ -17,18 +17,27 @@ legal requirement in credit decisioning.
 | Dataset Size | 32,581 loan applications |
 | Default Rate | 21.82% |
 
+## Key Business Insights
+| Loan Grade | Default Rate |
+|------------|-------------|
+| A | 9.96% |
+| B | 16.28% |
+| C | 20.73% |
+| D | 59.05% |
+| E | 64.42% |
+| F | 70.54% |
+| G | 98.44% |
+
+- Renters default more than mortgage holders or outright owners
+- Debt consolidation and medical loans carry the highest default rates
+- Loan percent income and loan grade are the strongest predictors of default
+
 ## Key Techniques
 - Exploratory analysis of default rates by loan grade, home ownership and intent
 - Missing value treatment using median imputation
 - Feature scaling using StandardScaler
 - Logistic Regression with class_weight='balanced'
 - Evaluation using precision, recall, F1 and ROC AUC
-
-## Key Business Insights
-- Default rates increase consistently from loan grade A to G
-- Renters default more than mortgage holders or outright owners
-- Debt consolidation and medical loans carry the highest default rates
-- Loan percent income and loan grade are the strongest predictors of default
 
 ## Dataset
 [Credit Risk Dataset — Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
